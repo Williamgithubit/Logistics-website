@@ -691,6 +691,9 @@ svg {
 }
 /*-------------------------RESPONSIVE SECTION--------------------------*/
 @media screen and (max-width: 800px) {
+  body{
+    overflow-x: hidden;
+  }
   .logo img {
     width: 60px;
   }
