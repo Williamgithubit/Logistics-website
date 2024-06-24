@@ -66,8 +66,34 @@ html {
   flex-direction: column;
   
 }
-.rotate-circle>image{
-  
+.slidbar{
+  display: none;
+  position: fixed;
+  top: 10px;
+  right: 0;
+  height: 100vh; 
+  width: 250px;
+  background-color: rgba(255, 255, 255, 0.658);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2); 
+  color: #212020;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+}
+.navagation p{
+  width: 100%;
+  padding: 20px 0;
+}
+
+.navagation a{
+  width: 100%;
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+  font-weight: 600;
+}
+
+.navagation a:active{
+  color: red;
 }
 .article1 {
   width: 100%;
@@ -653,12 +679,16 @@ svg {
   cursor: pointer;
 }
 
+
 /*-------------------------RESPONSIVE SECTION--------------------------*/
 @media screen and (max-width: 800px) {
   .logo img {
     width: 60px;
   }
   .nav {
+    display: none;
+  }
+  .hero-text span img {
     display: none;
   }
   .section1{
@@ -671,6 +701,9 @@ svg {
     display: flex;
     margin-left: 15rem;
     margin-top: 5px;
+  }
+  .rotate-circle{
+    z-index: -1;
   }
   .hero-images {
     display: none;
