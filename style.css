@@ -134,7 +134,10 @@ html {
   font-size: 15px;
   animation: bounce 2s ease-in-out;
 }
-
+.hero-text button:hover{
+  background-color: rgb(65, 63, 63);
+  transition: 0.5s;
+}
 .hero-images .image1 {
   object-fit: cover;
   width: 100%;
@@ -468,6 +471,10 @@ input[type="radio"] {
   font-weight: 600;
   border-radius: 5px;
 }
+.form-box>a:hover{
+  background-color: rgb(65, 63, 63);
+  transition: 0.5s;
+}
 /*--------------------------Section five(5)--------------------*/
 .section-5 {
   width: 100%;
@@ -660,6 +667,10 @@ input[type="radio"] {
   font-size: 18px;
   border-radius: 4px;
   font-weight: 600;
+}
+.contact-form>a:hover{
+  background-color: rgb(65, 63, 63);
+  transition: 0.5s;
 }
 footer {
   width: 100%;
