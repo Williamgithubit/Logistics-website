@@ -24,6 +24,7 @@ html {
   padding: 25px;
   align-items: baseline;
   background-color: var(--main-color);
+  position: fixed;
 }
 .logo img {
   width: 100px;
@@ -44,21 +45,36 @@ html {
 .nav .home {
   color: var(--second-color);
 }
-
 .nav a:hover {
   color: var(--second-color);
   transition: 0.5s;
 }
-
 .section1 {
   width: 100%;
-  height: auto;
-  background-color: var(--background-color);
+  height: 135vh;
+  background: linear-gradient(to top, #111E21 0%, #111E21 100%);
   overflow: hidden;
+}
+.rotate-circle{
+  position: relative;
+  width: 10%;
+  animation: rotate 5s ease-in-out infinite;
+  top: -15rem;
+  left: 20rem;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  
+}
+.rotate-circle>image{
+  
 }
 .article1 {
   width: 100%;
   display: flex;
+  animation-name: slideLeft;
+  animation-duration: 2s;
+  margin-top: 5rem;
 }
 .hero-text {
   width: 50%;
@@ -69,8 +85,9 @@ html {
   margin-bottom: 20px;
   font-weight: 600;
 }
-.hero-text span {
+.hero-text span img {
   margin-left: 10px;
+  animation: bounce 2s ease-in infinite;
 }
 
 .hero-text h1 {
@@ -89,6 +106,7 @@ html {
   font-weight: 600;
   margin-top: 40px;
   font-size: 15px;
+  animation: bounce 2s ease-in-out;
 }
 
 .hero-images .image1 {
@@ -549,31 +567,24 @@ input[type="radio"] {
   color: var(--second-color);
   font-weight: 600;
 }
-/* .top-link {
-  font-size: 1.25rem;
-  position: fixed;
-  bottom: 3rem;
-  right: 3rem;
-  background: var(--clr-secondary);
-  width: 2rem;
-  height: 2rem;
-  display: grid;
-  place-items: center;
-  border-radius: var(--radius);
-  color: var(--clr-white);
-  animation: bounce 2s ease-in-out infinite;
-  /* visibility: hidden; */
-/* z-index: -100; 
-}*/
+
 @keyframes bounce {
-  0% {
-    transform: scale(1);
+  5% {
+    transform: scale(-2);
   }
   50% {
     transform: scale(1.5);
   }
   100% {
     transform: scale(1);
+  }
+}
+@keyframes slideLeft{
+  from{transform: translateX(100px);}
+}
+@keyframes rotate{
+  100%{
+    transform: rotateZ(360deg);
   }
 }
 .contact-section {
@@ -649,6 +660,12 @@ svg {
   }
   .nav {
     display: none;
+  }
+  .section1{
+    height: 100vh;
+  }
+  .article1{
+    margin-top: 10rem;
   }
   svg {
     display: flex;

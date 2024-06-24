@@ -11,7 +11,7 @@
       integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    />
+    /> 
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
@@ -24,16 +24,17 @@
       </div>
       <nav class="nav">
         <a href="#home" class="home">HOME</a>
-        <a href="#">ABOUT</a>
-        <a href="#">SERVICES</a>
-        <a href="#">PROJECTS</a>
-        <a href="#">BLOG</a>
-        <a href="#">CONTACT</a>
+        <a href="#about">ABOUT</a>
+        <a href="#service">SERVICES</a>
+        <!-- <a href="#project">PROJECTS</a> -->
+        <a href="#blog">BLOG</a>
+        <a href="#contact">CONTACT</a>
       </nav>
-      <svg width="40" height="17" xmlns="http://www.w3.org/2000/svg"><g fill="#00001A" fill-rule="evenodd"><path d="M0 0h40v3H0zM0 7h40v3H0zM0 14h40v3H0z"/><path d="M0 0h40v3H0z"/></g></svg>
-    </header>
+      <svg width="100" height="20" xmlns="http://www.w3.org/2000/svg"><g fill="#f1f1f1" fill-rule="evenodd"><path d="M0 0h40v3H0zM0 7h40v3H0zM0 14h40v3H0z"/><path d="M0 0h40v3H0z"/></g></svg>
+    </header> 
+   
     <!-------------------------------------SECTION ONE (1)---------------------------------------->
-    <section class="section1">
+    <section class="section1" id="home">
       <article class="article1">
         <div class="hero-text">
           <p>
@@ -49,7 +50,6 @@
             src="./Images/bg-img-port-q7pdrd5xu3wysud7dnt0by6u0tdazafodivttui1qw-qaaqssppk5frsyzsghlpb7xti3zeg1olha6xujffuo.jpg"
             alt="image"
           />
-          <!-- <div class="circle"></div> -->
           <img
             class="image2"
             src="./Images/slider-shape-imgopt3-qaaqwanzka1g9y3pdo07msm7dn9e2qiau52mev3bek.jpg"
@@ -57,10 +57,14 @@
           />
         </div>
       </article>
+      <div class="rotate-circle">
+        <img src="./Images/circle-shape1.png" alt="" width="100%">
+        <!-- <img src="./Images/circle-shape2.png" alt="" width="100%"> -->
+      </div>
     </section>
 
     <!-------------------------------------SECTION TWO (2)---------------------------------------->
-    <section class="section2">
+    <section class="section2" id="service">
       <article class="article2">
         <div class="art-col1">
           <p>WHAT WE DO</p>
@@ -115,7 +119,7 @@
     </section>
 
     <!-------------------------------------SECTION THREE (3)---------------------------------------->
-    <section class="section3">
+    <section class="section3" id="about">
       <div class="sub-sect11">
         <div class="box1">
           <p class="our-features">Our Features</p>
@@ -252,7 +256,7 @@
       </div>
     </section>
         <!-------------------------------------SECTION SIX (6)---------------------------------------->
-    <section class="section-6">
+    <section class="section-6" id="blog">
       <p class="trends">Insight and Trends</p>
       <h2>Recent Articles</h2>
       <p class="follow">Follow our latest news and thoughts which focuses exclusively on insight, industry trends, top news headlines.</p>
@@ -292,7 +296,7 @@
         </div>
       </div>
     </section>
-    <section class="contact-section">
+    <section class="contact-section" id="contact">
       <h1>CONTACT US</h1>
       <p>
         We understand the importance of approaching each work integrally and believe in the power of simple and easy communication.
