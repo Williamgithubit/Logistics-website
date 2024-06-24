@@ -25,6 +25,7 @@ html {
   align-items: baseline;
   background-color: var(--main-color);
   position: fixed;
+  z-index: 1;
 }
 .logo img {
   width: 100px;
@@ -133,6 +134,7 @@ html {
   margin-top: 40px;
   font-size: 15px;
   animation: bounce 2s ease-in-out;
+  cursor: pointer;
 }
 .hero-text button:hover{
   background-color: rgb(65, 63, 63);
@@ -192,6 +194,10 @@ html {
   font-weight: 600;
   margin-top: 40px;
   font-size: 15px;
+}
+.art-col2 button:hover{
+  background-color: rgb(65, 63, 63);
+  transition: 0.5s;
 }
 .card {
   width: 100%;
