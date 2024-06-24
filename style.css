@@ -678,8 +678,6 @@ svg {
   display: none;
   cursor: pointer;
 }
-
-
 /*-------------------------RESPONSIVE SECTION--------------------------*/
 @media screen and (max-width: 800px) {
   .logo img {
